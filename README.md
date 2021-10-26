@@ -1,4 +1,4 @@
-# Autoencoders for solving Photomosaic.
+# Autoencoders for solving Photomosaics
 Transform an image of your choice into a beautiful photomosaic consisting of artificially generated tiles.
 
 <photos of woman, man, sunset, bender, and me>
@@ -9,7 +9,7 @@ Vary the density of tiles for images of different sizes.
 
 This approach makes use of a specially pretrained autoencoder to encode tiles into a dense latent space and decode them as images close to the autoencoder’s original training set.
 
-# How is this different from photomosaics that use pre-prepared tiles?
+# How is this different from pre-prepared tiles?
 There are many great search-based algorithms to create photomosaics. These algorithms come with an advantage in the form of the perfect quality of tiles. You can find a large number of such artworks on the web. For example, if you are a fan of British football, here is a Bobby Robson portrait made up of 2,000 pictures of Newcastle by Welsh artist Nathan Wyburn.
 
 https://i2-prod.chroniclelive.co.uk/incoming/article16568705.ece/ALTERNATES/s615b/0_A-portrait-of-Sir-Bobby-Robson-has-been-created-after-the-people-of-Newcastle-voted-for-the-Geordie.jpg
@@ -21,7 +21,7 @@ However, search-based models lack flexibility, and their effectiveness and speed
 
 Overall, the search-based approach is still better for creating meaningful artworks, while the autoencoder approach can act as an online operating filter.
 
-# How efficient is this approach? 
+# Efficiency of this approach 
 Generation of realistic images from “something a bit better than random noise” while keeping some visual information presents many challenges. 
 
 It is necessary to keep the balance between the quality of tiles and the overall accuracy of photomosaics. By this token, it is vitally important to keep the set of possible encodings in the latent space as uniform as possible to ensure that each tile satisfies the desired quality.
