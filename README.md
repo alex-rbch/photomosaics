@@ -1,7 +1,7 @@
 # Autoencoders for solving Photomosaics
 Transform an image of your choice into a beautiful photomosaic consisting of artificially generated tiles.
 
-<photos of woman, man, sunset, bender, and me>
+![scope](https://user-images.githubusercontent.com/42875258/138975333-4ec3477b-f2a4-41c2-9d9d-640dbe8aa6ae.png)
 
 Vary the density of tiles for images of different sizes.
 
@@ -28,6 +28,6 @@ It is necessary to keep the balance between the quality of tiles and the overall
 
 For MNIST, I successfully used a two-dimensional latent space. To support uniformity, I included a sigmoid activation function to limit the latent space to $(0, 1)^2$ and added Gaussian noise to the model during training.
 
-<distribution of digits>
+![distribution](https://user-images.githubusercontent.com/42875258/138975309-1c8247a7-6e2a-4376-8fe2-707a8b07170a.png)
 
 Finally, I must mention that a more advanced autoencoder or a separate GAN for generation might solve this problem. Preparing these models takes time, but it is certainly promising. 
