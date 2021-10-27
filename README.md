@@ -1,18 +1,24 @@
 # Autoencoders for solving Photomosaics
 Transform an image of your choice into a beautiful photomosaic consisting of artificially generated tiles.
 
-![scope](https://user-images.githubusercontent.com/42875258/138975333-4ec3477b-f2a4-41c2-9d9d-640dbe8aa6ae.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/42875258/138975333-4ec3477b-f2a4-41c2-9d9d-640dbe8aa6ae.png" width="700">
+</p>
 
 Vary the density of tiles for images of different sizes.
 
-<sunset 100x100, my photo 28x28>
+<p align="center">
+<img src="https://user-images.githubusercontent.com/42875258/138990517-ca2c859e-db61-4e0c-b425-a5033e77fb18.png" width="400">
+</p>
 
 This approach makes use of a specially pretrained autoencoder to encode tiles into a dense latent space and decode them as images close to the autoencoder’s original training set.
 
 # How is this different from pre-prepared tiles?
 There are many great search-based algorithms to create photomosaics. These algorithms come with an advantage in the form of the perfect quality of tiles. You can find a large number of such artworks on the web. For example, if you are a fan of British football, here is a Bobby Robson portrait made up of 2,000 pictures of Newcastle by Welsh artist Nathan Wyburn.
 
-https://i2-prod.chroniclelive.co.uk/incoming/article16568705.ece/ALTERNATES/s615b/0_A-portrait-of-Sir-Bobby-Robson-has-been-created-after-the-people-of-Newcastle-voted-for-the-Geordie.jpg
+<p align="center">
+<img src="https://user-images.githubusercontent.com/42875258/138990510-210716c6-f4f1-431d-826e-5b6306b590a2.jpg" width="200">
+</p>
 
 However, search-based models lack flexibility, and their effectiveness and speed depend heavily on the diversity and size of datasets. The autoencoder approach has three main advantages over search-based models. 
 1)	Tiles fit better in their neighborhoods because they are generated for each location individually. 
@@ -28,6 +34,8 @@ It is necessary to keep the balance between the quality of tiles and the overall
 
 For MNIST, I successfully used a two-dimensional latent space. To support uniformity, I included a sigmoid activation function to limit the latent space to $(0, 1)^2$ and added Gaussian noise to the model during training.
 
-![distribution](https://user-images.githubusercontent.com/42875258/138975309-1c8247a7-6e2a-4376-8fe2-707a8b07170a.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/42875258/138975309-1c8247a7-6e2a-4376-8fe2-707a8b07170a.png" width="500">
+</p>
 
 Finally, I must mention that a more advanced autoencoder or a separate GAN for generation might solve this problem. Preparing these models takes time, but it is certainly promising. 
