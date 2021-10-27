@@ -8,7 +8,7 @@ Transform an image of your choice into a beautiful photomosaic consisting of art
 Vary the density of tiles for images of different sizes.
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/42875258/138990517-ca2c859e-db61-4e0c-b425-a5033e77fb18.png" width="500">
+<img src="https://user-images.githubusercontent.com/42875258/138996178-49b0102f-6685-4c0e-8033-3ee7b327520d.png" width="600">
 </p>
 
 This approach makes use of a specially pretrained autoencoder to encode tiles into a dense latent space and decode them as images close to the autoencoder’s original training set.
