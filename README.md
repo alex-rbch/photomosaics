@@ -36,7 +36,9 @@ It is necessary to keep the balance between the quality of tiles and the overall
 For MNIST, I successfully used a two-dimensional latent space. To support uniformity, I included a sigmoid activation function to limit the latent space to $(0, 1)^2$ and added a layer of Gaussian noise to the model during training as regularization. These are several distributions of digits within the latent space, I encoutered.
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/42875258/138975309-1c8247a7-6e2a-4376-8fe2-707a8b07170a.png" width="300">
+<img src="https://user-images.githubusercontent.com/42875258/138975309-1c8247a7-6e2a-4376-8fe2-707a8b07170a.png" width="250">
+<img src="https://user-images.githubusercontent.com/42875258/139004522-f107cac6-731b-4e71-a466-5b72991849d2.png" width="250">
+<img src="https://user-images.githubusercontent.com/42875258/139004548-555eb4b5-0b0b-4472-bc92-3a84d429db24.png" width="250">  
 </p>
 
 Finally, I must mention that a more advanced autoencoder or even a separate GAN might solve this problem. Preparing these models takes time, but a good photomosaic is certainly worth it. 
