@@ -2,13 +2,13 @@
 Transform an image of your choice into a beautiful photomosaic consisting of artificially generated tiles.
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/42875258/138975333-4ec3477b-f2a4-41c2-9d9d-640dbe8aa6ae.png" width="700">
+<img src="https://user-images.githubusercontent.com/42875258/138995837-b2da6a40-3706-47e7-8eb3-2efc6959241e.png" width="500">
 </p>
 
 Vary the density of tiles for images of different sizes.
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/42875258/138990517-ca2c859e-db61-4e0c-b425-a5033e77fb18.png" width="400">
+<img src="https://user-images.githubusercontent.com/42875258/138990517-ca2c859e-db61-4e0c-b425-a5033e77fb18.png" width="500">
 </p>
 
 This approach makes use of a specially pretrained autoencoder to encode tiles into a dense latent space and decode them as images close to the autoencoder’s original training set.
