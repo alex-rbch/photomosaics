@@ -14,7 +14,7 @@ Vary the number of tiles to achieve different levels of detalization.
 This approach makes use of a specially pretrained autoencoder to encode tiles into a dense latent space and decode them as images close to the autoencoder’s original training set.
 
 # How is this different from pre-prepared tiles?
-There are many great search-based algorithms to create photomosaics. They find tiles from a dataset of original tiles based on a certain metric. These algorithms come with an advantage in the form of the perfect quality of tiles. You can find a large number of such artworks on the web. For example, if you are a fan of British football, on the left you can find a portrait of Bobby Robson made up of 2,000 pictures of Newcastle (with repetitions) by Welsh artist Nathan Wyburn. For comparision, on the right there is a photomosaic of yours truly consisting of about 1,700 MNIST-type tiles. 
+There are many great search-based algorithms to create photomosaics. They find tiles from a dataset of original tiles based on a certain similarity metric. These algorithms come with an advantage in the form of the perfect quality of tiles. You can find a large number of such artworks on the web. For example, if you are a fan of British football, on the left there is a portrait of Bobby Robson made up of 2,000 pictures of Newcastle (with repetitions) by Welsh artist Nathan Wyburn. It contains about 5,000 tiles. For comparision, on the right there is a photomosaic of yours truly consisting of about 1,700 MNIST-type tiles. 
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/42875258/138990510-210716c6-f4f1-431d-826e-5b6306b590a2.jpg" height="250" width="160">
@@ -33,7 +33,7 @@ Generation of realistic images from “something a bit better than random noise�
 
 It is necessary to keep the balance between the quality of tiles and the overall accuracy of photomosaics. By this token, it is vitally important to keep the set of possible encodings in the latent space as dense as possible to ensure that each tile satisfies the desired quality.
 
-For MNIST, I successfully used a two-dimensional latent space. To support uniformity, I included a sigmoid activation function to limit the latent space to $(0, 1)^2$ and added a layer of Gaussian noise to the model during training as regularization. These are several distributions of digits within the latent space, I encoutered.
+For MNIST, I successfully used a two-dimensional latent space. To support uniformity, I included a sigmoid activation function to limit the latent space to $(0, 1)^2$ and added a layer of Gaussian noise to the model during training as regularization. These are several examples of distributions of digits within the latent space.
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/42875258/138975309-1c8247a7-6e2a-4376-8fe2-707a8b07170a.png" width="250">
@@ -41,4 +41,4 @@ For MNIST, I successfully used a two-dimensional latent space. To support unifor
 <img src="https://user-images.githubusercontent.com/42875258/139004548-555eb4b5-0b0b-4472-bc92-3a84d429db24.png" width="250">  
 </p>
 
-Finally, I must mention that a more advanced autoencoder or even a separate GAN might solve this problem. Preparing these models takes time, but a good photomosaic is certainly worth it. 
+Finally, I must mention that a more advanced autoencoder or even a separate GAN might overcome these problems. Preparing such models takes time, but a good photomosaic is certainly worth it. 
