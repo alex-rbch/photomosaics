@@ -17,7 +17,8 @@ This approach makes use of a specially pretrained autoencoder to encode tiles in
 There are many great search-based algorithms to create photomosaics. These algorithms come with an advantage in the form of the perfect quality of tiles. You can find a large number of such artworks on the web. For example, if you are a fan of British football, here is a Bobby Robson portrait made up of 2,000 pictures of Newcastle by Welsh artist Nathan Wyburn.
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/42875258/138990510-210716c6-f4f1-431d-826e-5b6306b590a2.jpg" width="200">
+<img src="https://user-images.githubusercontent.com/42875258/138990510-210716c6-f4f1-431d-826e-5b6306b590a2.jpg" height="250">
+<img src="https://user-images.githubusercontent.com/42875258/138996848-77c4bd8a-2bf8-46ca-bb4d-fafd0dccd953.png" height="252">
 </p>
 
 However, search-based models lack flexibility, and their effectiveness and speed depend heavily on the diversity and size of datasets. The autoencoder approach has three main advantages over search-based models. 
