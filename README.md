@@ -1,4 +1,4 @@
-# Autoencoders for solving Photomosaics, or "Automosaics"
+# Autoencoders for solving Photomosaics
 Transform an image of your choice into a beautiful photomosaic consisting of artificially generated tiles.
 
 <p align="center">
